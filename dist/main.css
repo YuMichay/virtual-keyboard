@@ -1,0 +1,145 @@
+/*!**************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!./style.css ***!
+  \**************************************************************/
+body {
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+textarea {
+  margin: 2rem;
+  width: 60%;
+  height: 10rem;
+  border-radius: 1rem;
+  font-family: 'Georgia';
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.06em;
+}
+
+.keyboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  row-gap: 0.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c6e4ee), color-stop(40%, #c6e4ee), color-stop(60%, #fed1ae), color-stop(70%, #faa0b9), color-stop(80%, #cb7dcb), to(#757ecb));
+  background: linear-gradient(#c6e4ee 0%, #c6e4ee 40%, #fed1ae 60%, #faa0b9 70%, #cb7dcb 80%, #757ecb 100%);
+  background-repeat: no-repeat;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.keyboard div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+}
+
+button {
+  cursor: pointer;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  text-align: center;
+  font-family: 'Georgia';
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  letter-spacing: 0.06em;
+  padding: 0.5rem;
+  border: 0.05rem solid #FFFFFF;
+  border-radius: 1rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: transparent;
+}
+
+button.active {
+  -webkit-animation-name: click-key;
+          animation-name: click-key;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  background: transparent;
+}
+
+@-webkit-keyframes click-key {
+  0% {
+    border-radius: 1rem;
+  }
+  100% {
+    border-radius: 2rem;
+  }
+}
+
+@keyframes click-key {
+  0% {
+    border-radius: 1rem;
+  }
+  100% {
+    border-radius: 2rem;
+  }
+}
+
+button.shift-left, button.shift-right {
+  padding: 0.5rem 1.5rem;
+}
+
+button.space {
+  width: 40%;
+}
+
+.info {
+  text-align: center;
+  font-family: 'Georgia';
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  letter-spacing: 0.06em;
+  padding: 2rem;
+}
